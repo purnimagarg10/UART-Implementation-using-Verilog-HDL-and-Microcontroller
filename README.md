@@ -77,16 +77,13 @@ The UART is configured using special function registers, and data transmission a
 Timer 1 is configured in Mode 2 (8-bit auto-reload) to generate the baud rate.
 The SMOD bit is cleared to ensure standard baud rate operation.
 
-### Registers Used
-| Register | Description |
-|--------|-------------|
-| TMOD | Configures Timer 1 in Mode 2 |
-| TH1 | Sets baud rate to 4800 bps |
-| SCON | Selects UART Mode 1 and enables receiver |
-| PCON | Ensures SMOD = 0 |
-| SBUF | Serial data buffer |
-| TI | Indicates transmit completion |
-| RI | Indicates data reception |
+### Registers Used (Overview)
+
+The 8051 UART implementation uses standard serial communication registers
+including `TMOD`, `TH1`, `SCON`, `PCON`, `SBUF`, `TI`, and `RI` to configure
+the baud rate, enable the receiver, and control data transmission and reception.
+
+(Detailed register usage is documented in the `microcontroller/` folder.)
 
 ### Tools Used
 - Embedded C
