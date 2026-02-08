@@ -83,7 +83,7 @@ The 8051 UART implementation uses standard serial communication registers
 including `TMOD`, `TH1`, `SCON`, `PCON`, `SBUF`, `TI`, and `RI` to configure
 the baud rate, enable the receiver, and control data transmission and reception.
 
-(Detailed register usage is documented in the `microcontroller/` folder.)
+(Detailed register usage is documented in the `8051 microcontroller/` folder.)
 
 ### Tools Used
 - Embedded C
